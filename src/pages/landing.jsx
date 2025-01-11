@@ -10,7 +10,8 @@ import SplitText from "@/components/ui/SplitText";
 import BounceCards from "@/components/ui/BounceCards";
 import BlurText from "@/components/ui/BlurText";
 import InteractiveHoverButton from "@/components/ui/interactive-hover-button";
-
+import { cn } from "@/lib/utils";
+import Marquee from "@/components/ui/marquee";
 import {
   Carousel,
   CarouselContent,
