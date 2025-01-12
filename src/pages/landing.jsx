@@ -154,7 +154,7 @@ const Landing = () => {
                 ],
               },
               {
-                title: "B.Tech",
+                title: "B.E",
                 institute: "A.P. Shah Institute Of Technology",
                 details: [
                   "Degree: B.E",
