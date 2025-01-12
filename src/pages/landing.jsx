@@ -20,7 +20,6 @@ import TypingAnimation from "@/components/ui/typing-animation";
 import BlobCursor from "@/components/ui/BlobCursor";
 import Images from "@/images/Images";
 
-
 import {
   Drawer,
   DrawerClose,
@@ -51,20 +50,28 @@ const handleAnimationComplete = () => {
 
 const Landing = () => {
   return (
+    <>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet"/>
+
     <main className="bg-slate-950 container mx-auto text-center">
   <ScrollProgress className="top-[65px]" />
   <Nav className="sticky" />
 
-  <div className="w-full">
-    <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
+
+
+
+  <div className="w-full ">
+    <div className="text-4xl relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
+      
       <BlurText
-        text="Welcome to FOLIX...."
+        text="Welcome To Folix"
         delay={150}
         animateBy="words"
         direction="top"
         onAnimationComplete={handleAnimationComplete}
-        className="text-5xl sm:text-7xl mb-20 text-white font-semibold text-center"
+        className="text-center sm:text-7xl mb-20 text-white font-semibold items-center font-playwrite text-lg italic"
       />
+      
       <RetroGrid />
     </div>
 
@@ -208,7 +215,7 @@ const Landing = () => {
   </div>
   <Footer />
 </main>
-
+</>
   );
 };
 

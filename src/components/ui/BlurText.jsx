@@ -4,7 +4,7 @@ import { useSprings, animated } from "@react-spring/web";
 const BlurText = ({
   text = "",
   delay = 200,
-  className = "",
+  className = "m-auto",
   animateBy = "words", // 'words' or 'letters'
   direction = "top", // 'top' or 'bottom'
   threshold = 0.1,

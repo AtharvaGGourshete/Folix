@@ -1,3 +1,5 @@
+import { Italic } from 'lucide-react';
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -7,6 +9,15 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			playwrite: ['"Playwrite AU SA"', 'serif'], // Custom font with a fallback
+		  },
+		  fontWeight: {
+			custom: '400', // Replace <weight> with the desired numeric value (e.g., 400, 700)
+		  },
+		  fontStyle: {
+			italic: 'italic', // Tailwind doesn't natively handle fontStyle but normal is default
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
