@@ -76,7 +76,7 @@ const Landing = () => {
 
           {/* About Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 lg:p-4">
-            <div className="z-10 flex items-center justify-center bg-slate-950 dark:bg-black  rounded-lg">
+            <div className=" flex items-center justify-center bg-slate-950 dark:bg-black  rounded-lg">
               <TextReveal text="Hi, I'm Atharva Ganesh Gourshete, an enthusiastic aspiring professional passionate about coding, gaming, and gymming, etc.." />
             </div>
             <div className="flex justify-center items-end mx-48">
@@ -194,7 +194,7 @@ const Landing = () => {
 
           {/* Drawer Section */}
           <div className="flex justify-center mt-20">
-            <Drawer className="flex -z-30 justify-center bg-slate-950 rounded-full">
+            <Drawer className="flex justify-center bg-slate-950 rounded-full">
               <DrawerTrigger className="flex justify-center text-black rounded-full">
                 <InteractiveHoverButton text="More" />
               </DrawerTrigger>
