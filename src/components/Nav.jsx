@@ -63,7 +63,7 @@ function Nav() {
       {/* Sign-In Modal */}
       {showSignIn && (
         <div
-          className="fixed flex inset-0 items-center bg-black bg-opacity-50 justify-center z-50"
+          className="fixed flex inset-0 items-center bg-black bg-opacity-50 justify-center"
           onClick={handleOverlayClick}
         >
           <SignIn signUpForceRedirectUrl="/" fallbackRedirectUrl="/" />

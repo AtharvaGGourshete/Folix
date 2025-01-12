@@ -51,171 +51,189 @@ const handleAnimationComplete = () => {
 const Landing = () => {
   return (
     <>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet"/>
-
-    <main className="bg-slate-950 container mx-auto text-center">
-  <ScrollProgress className="top-[65px]" />
-  <Nav className="sticky" />
-
-
-
-
-  <div className="w-full ">
-    <div className="text-4xl relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
-      
-      <BlurText
-        text="Welcome To Folix"
-        delay={150}
-        animateBy="words"
-        direction="top"
-        onAnimationComplete={handleAnimationComplete}
-        className="text-center sm:text-7xl mb-20 text-white font-semibold items-center font-playwrite text-lg italic"
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap"
+        rel="stylesheet"
       />
-      
-      <RetroGrid />
-    </div>
 
-    {/* About Section */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 lg:p-4">
-      <div className="z-10 flex items-center justify-center bg-slate-950 dark:bg-black  rounded-lg">
-        <TextReveal text="Hi, I'm Atharva Ganesh Gourshete, an enthusiastic aspiring professional passionate about coding, gaming, and gymming, etc.." />
-      </div>
-      <div className="flex justify-center items-end mx-48">
-        <BounceCards
-          className="custom-class"
-          images={images}
-          containerWidth="100%"
-          containerHeight={500}
-          animationDelay={1}
-          animationStagger={0.8}
-          easeType="elastic.out(1, 5)"
-          transformStyles={transformStyles}
-        />
-      </div>
-    </div>
+      <main className="bg-slate-950 container mx-auto text-center">
+        <ScrollProgress className="top-[65px]" />
+        <Nav className="sticky" />
 
-    {/* Social Handles Section */}
-    <SplitText
-      text="Social Handles"
-      className="text-4xl sm:text-6xl mb-10 p-8 text-white font-semibold text-center"
-      delay={150}
-      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-      easing="easeOutCubic"
-      threshold={0.2}
-      rootMargin="-50px"
-      onLetterAnimationComplete={handleAnimationComplete}
-    />
-    <div className="flex flex-wrap justify-center gap-5 mb-20 p-20">
-      {[
-        { text: "LinkedIn", url: "https://www.linkedin.com/in/atharva-gourshete-b2a66927b/" },
-        { text: "Instagram", url: "https://www.instagram.com/atharva_gourshete/" },
-        { text: "Twitter", url: "https://x.com/Atharvag_17" },
-        { text: "GitHub", url: "https://github.com/AtharvaGGourshete" },
-      ].map(({ text, url }, index) => (
-        <Link to={url} key={index} className="relative">
-          <InteractiveHoverButton text={text} />
-        </Link>
-      ))}
-    </div>
+        <div className="w-full ">
+          <div className="text-4xl relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
+            <BlurText
+              text="Welcome To Folix"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-center sm:text-7xl mb-28 text-white font-semibold items-center font-playwrite italic"
+            />
 
-    {/* Education Section */}
-    <SplitText
-      text="Education"
-      className="text-4xl sm:text-6xl mb-10 text-white font-semibold text-center"
-      delay={150}
-      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-      easing="easeOutCubic"
-      threshold={0.2}
-      rootMargin="-50px"
-      onLetterAnimationComplete={handleAnimationComplete}
-    />
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
-      {[
-        {
-          title: "Schooling",
-          institute: "Lok Puram Public School",
-          details: ["Grade: 91.4%", "Board: CBSE", "Year: 2009 - 2021"],
-        },
-        {
-          title: "High School",
-          institute: "Pace Institute Of Science",
-          details: ["Grade: 73.33%", "Board: SSC", "Field: Science", "Year: 2021 - 2023"],
-        },
-        {
-          title: "B.Tech",
-          institute: "A.P. Shah Institute Of Technology",
-          details: ["Degree: B.E", "Branch: Computer Engineering", "Year: 2023 - 2027"],
-        },
-      ].map(({ title, institute, details }, index) => (
-        <div key={index} className="bg-slate-900 p-5 rounded-lg text-white">
-          <SplitText text={title} className="text-xl font-bold mb-4" />
-          <SparklesText text={institute} />
-          {details.map((detail, i) => (
-            <TypingAnimation key={i}>{detail}</TypingAnimation>
-          ))}
-        </div>
-      ))}
-    </div>
+            <RetroGrid />
+          </div>
 
-    {/* Skills Section */}
-    <div className="p-16">
-    <SplitText
-      text="Skills"
-      className="text-4xl sm:text-7xl mb-10 text-white font-semibold text-center mt-20"
-      delay={150}
-      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-      easing="easeOutCubic"
-      threshold={0.2}
-      rootMargin="-50px"
-      onLetterAnimationComplete={handleAnimationComplete}
-    />
-    </div>
-    <TiltedScroll />
+          {/* About Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 lg:p-4">
+            <div className="z-10 flex items-center justify-center bg-slate-950 dark:bg-black  rounded-lg">
+              <TextReveal text="Hi, I'm Atharva Ganesh Gourshete, an enthusiastic aspiring professional passionate about coding, gaming, and gymming, etc.." />
+            </div>
+            <div className="flex justify-center items-end mx-48">
+              <BounceCards
+                className="custom-class"
+                images={images}
+                containerWidth="100%"
+                containerHeight={500}
+                animationDelay={1}
+                animationStagger={0.8}
+                easeType="elastic.out(1, 5)"
+                transformStyles={transformStyles}
+              />
+            </div>
+          </div>
 
-    {/* Drawer Section */}
-    <div className="flex justify-center mt-20">
-      <Drawer className="flex justify-center bg-slate-950 rounded-full">
-        <DrawerTrigger className="bg-slate-950 flex justify-center text-black rounded-full">
-          <InteractiveHoverButton text="More ->" />
-        </DrawerTrigger>
-        <DrawerContent className="bg-slate-950 text-white border-0 min-h-screen">
-          <DrawerHeader>
-            <DrawerTitle>
-              <div className="grid grid-cols-2 gap-5 p-5">
-                {Array(6)
-                  .fill(null)
-                  .map((_, index) => (
-                    <div
-                      key={index}
-                      className="bg-slate-900 p-5 rounded-lg flex justify-center"
-                    >
-                      <img
-                        src={Images[`image${index + 1}`]}
-                        alt={`Image ${index + 1}`}
-                        className="h-40"
-                      />
-                    </div>
-                  ))}
+          {/* Social Handles Section */}
+          <SplitText
+            text="Social Handles"
+            className="text-4xl sm:text-6xl mb-10 p-8 text-white font-semibold text-center"
+            delay={150}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <div className="flex flex-wrap justify-center gap-5 mb-20 p-20">
+            {[
+              {
+                text: "LinkedIn",
+                url: "https://www.linkedin.com/in/atharva-gourshete-b2a66927b/",
+              },
+              {
+                text: "Instagram",
+                url: "https://www.instagram.com/atharva_gourshete/",
+              },
+              { text: "Twitter", url: "https://x.com/Atharvag_17" },
+              { text: "GitHub", url: "https://github.com/AtharvaGGourshete" },
+            ].map(({ text, url }, index) => (
+              <Link to={url} key={index} className="relative">
+                <InteractiveHoverButton text={text} />
+              </Link>
+            ))}
+          </div>
+
+          {/* Education Section */}
+          <SplitText
+            text="Education"
+            className="text-4xl sm:text-6xl mb-10 text-white font-semibold text-center"
+            delay={150}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+            {[
+              {
+                title: "Schooling",
+                institute: "Lok Puram Public School",
+                details: ["Grade: 91.4%", "Board: CBSE", "Year: 2009 - 2021"],
+              },
+              {
+                title: "High School",
+                institute: "Pace Institute Of Science",
+                details: [
+                  "Grade: 73.33%",
+                  "Board: SSC",
+                  "Field: Science",
+                  "Year: 2021 - 2023",
+                ],
+              },
+              {
+                title: "B.Tech",
+                institute: "A.P. Shah Institute Of Technology",
+                details: [
+                  "Degree: B.E",
+                  "Branch: Computer Engineering",
+                  "Year: 2023 - 2027",
+                ],
+              },
+            ].map(({ title, institute, details }, index) => (
+              <div
+                key={index}
+                className="bg-slate-900 p-5 rounded-lg text-white"
+              >
+                <SplitText text={title} className="text-xl font-bold mb-4" />
+                <SparklesText text={institute} />
+                {details.map((detail, i) => (
+                  <TypingAnimation key={i}>{detail}</TypingAnimation>
+                ))}
               </div>
-            </DrawerTitle>
-          </DrawerHeader>
-          <DrawerFooter>
-            <DrawerClose>
-              <Button variant="outline" className="text-black">
-                Cancel
-              </Button>
-            </DrawerClose>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-    </div>
-  </div>
-  <Footer />
-</main>
-</>
+            ))}
+          </div>
+
+          {/* Skills Section */}
+          <div className="p-16">
+            <SplitText
+              text="Skills"
+              className="text-4xl sm:text-7xl mb-10 text-white font-semibold text-center mt-20"
+              delay={150}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+              onLetterAnimationComplete={handleAnimationComplete}
+            />
+          </div>
+          <TiltedScroll />
+
+          {/* Drawer Section */}
+          <div className="flex justify-center mt-20">
+            <Drawer className="flex -z-30 justify-center bg-slate-950 rounded-full">
+              <DrawerTrigger className="flex justify-center text-black rounded-full">
+                <InteractiveHoverButton text="More" />
+              </DrawerTrigger>
+              <DrawerContent className="bg-slate-900 text-white border-0 h-5/6 rounded-lg">
+                <div className="grid grid-cols-3 mt-10 gap-3 p-5">
+                  {Array(6)
+                    .fill(null)
+                    .map((_, index) => (
+                      <div
+                        key={index}
+                        className=" p-5 rounded-lg flex justify-center"
+                      >
+                        <div className="relative group w-fit">
+                          {/* Background Blur */}
+                          <div className="absolute inset-0 bg-cyan-700 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-all"></div>
+
+                          {/* Image */}
+                          <img
+                            src={Images[`image${index + 1}`]}
+                            alt={`Image ${index + 1}`}
+                            className="z-50 relative h-40 hover:-translate-y-5 transition-all"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                </div>
+
+                <DrawerClose className="">
+                  <Button variant="outline" className="text-black">
+                    Cancel
+                  </Button>
+                </DrawerClose>
+              </DrawerContent>
+            </Drawer>
+          </div>
+        </div>
+        <Footer />
+      </main>
+    </>
   );
 };
 
