@@ -63,12 +63,12 @@ const Landing = () => {
         <div className="w-full ">
           <div className="text-4xl relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
             <BlurText
-              text="Welcome To Folix"
+              text="Welcome To My Portfolio"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-center sm:text-7xl mb-28 text-white font-semibold items-center font-playwrite italic"
+              className="text-center flex justify-center sm:text-7xl mb-28 text-white font-semibold items-center font-playwrite italic p-10"
             />
 
             <RetroGrid />

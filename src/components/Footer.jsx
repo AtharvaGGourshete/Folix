@@ -8,7 +8,7 @@ function Footer() {
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">
         © 2025{" "}
         <a href="/" className="hover:underline ">
-          FOLIX™
+          Portfolio™
         </a>
         . All Rights Reserved by Atharva Ganesh Gourshete.
       </span>

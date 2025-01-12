@@ -36,7 +36,7 @@ function Nav() {
         <div className="flex items-center justify-between px-6 py-4 text-white">
           {/* Brand Name */}
           <a href="/">
-          <div className="text-2xl font-bold">Folix</div>
+          <div className="text-2xl font-bold">Atharva.dev</div>
           </a>
 
           {/* Navigation Links */}
