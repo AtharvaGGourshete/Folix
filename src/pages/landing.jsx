@@ -199,7 +199,7 @@ const Landing = () => {
                 <InteractiveHoverButton text="More" />
               </DrawerTrigger>
               <DrawerContent className="bg-slate-900 text-white border-0 h-5/6 rounded-lg">
-                <div className="grid grid-cols-3 mt-10 gap-3 p-5">
+                <div className="grid grid-cols-3 mt-10 gap-3 p-3">
                   {Array(6)
                     .fill(null)
                     .map((_, index) => (
