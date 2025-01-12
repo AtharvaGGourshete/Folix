@@ -18,7 +18,7 @@ import Marquee from "@/components/ui/marquee";
 import ScrollProgress from "@/components/ui/scroll-progress";
 import TypingAnimation from "@/components/ui/typing-animation";
 import BlobCursor from "@/components/ui/BlobCursor";
-import IMAGES from '../images/IMAGES'
+import Images from "@/images/Images";
 
 
 import {
@@ -229,42 +229,42 @@ const Landing = () => {
                     <div className="grid grid-cols-2 w-1/2 grid-rows-3 gap-5 justify-between p-5 min-h-96 rounded-lg text-white">
                     <div className="bg-slate-900 border-0 border-white">
                     <img 
-                    src={IMAGES.image1} 
+                    src={Images.image1}
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
                     </div>
                     <div className="bg-slate-900 border-0 border-white">
                     <img 
-                    src={IMAGES.image2} 
+                    src={Images.image2} 
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
                     </div>
                     <div className="bg-slate-900 border-0 border-white">
                     <img 
-                    src={IMAGES.image3} 
+                    src={Images.image3} 
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
                     </div>
                     <div className="bg-slate-900 border-0 border-white">
                       <img 
-                    src={IMAGES.image4} 
+                    src={Images.image4} 
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
                     </div>
                     <div className="bg-slate-900 border-0 border-white">
                       <img 
-                    src={IMAGES.image5} 
+                    src={Images.image5} 
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
                     </div>
                     <div className="bg-slate-900 border-0 border-white">
                       <img 
-                    src={IMAGES.image6} 
+                    src={Images.image6} 
                     alt='first image'
                     className="h-40 mr-auto ml-auto"
                     />
