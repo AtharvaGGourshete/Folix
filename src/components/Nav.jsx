@@ -41,11 +41,11 @@ function Nav() {
               <ul className="flex gap-8 mr-16 text-[18px]">
                 
                 <SignedOut>
-                  <Link to="/">
+                  {/* <Link to="/landing.jsx">
                     <Button variant="ghost">Home</Button>
-                  </Link>
+                  </Link> */}
 
-                  {/* <Link to="/education">
+                  {/* <Link to="/Education.jsx">
                     <Button variant="ghost">Education</Button>
                   </Link> */}
 
@@ -57,11 +57,11 @@ function Nav() {
                   </Button>
                 </SignedOut>
                 <SignedIn>
-                  {/* <Link to="/">
+                  {/* <Link to="/landing.jsx">
                     <Button variant="ghost">Home</Button>
-                  </Link>
+                  </Link> */}
 
-                  <Link to="/education">
+                  {/* <Link to="/Education.jsx">
                     <Button variant="ghost">Education</Button>
                   </Link> */}
                   <UserButton

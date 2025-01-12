@@ -20,6 +20,7 @@ import TypingAnimation from "@/components/ui/typing-animation";
 import BlobCursor from "@/components/ui/BlobCursor";
 import IMAGES from '../images/IMAGES'
 
+
 import {
   Drawer,
   DrawerClose,
@@ -197,10 +198,11 @@ const Landing = () => {
               <TypingAnimation>Year: 2023 - 2027</TypingAnimation>
             </div>
           </div>
-
+          <div>
+          
           <SplitText
             text="Skills"
-            className="text-6xl mb-20 text-white font-semibold flex justify-center mt-80"
+            className="text-6xl mb-10 text-white font-semibold flex justify-center mt-80"
             delay={150}
             animationFrom={{
               opacity: 0,
@@ -213,10 +215,11 @@ const Landing = () => {
             onLetterAnimationComplete={handleAnimationComplete}
           />
           <TiltedScroll />
+          </div>
           <div className="flex justify-center">
             <Drawer className="flex justify-center bg-slate-950 rounded-full">
               <DrawerTrigger className="bg-slate-950 flex justify-center text-black rounded-full">
-                <div className="relative">
+                <div className="relative mb-40">
                   <InteractiveHoverButton text="More ->" />
                 </div>
               </DrawerTrigger>
