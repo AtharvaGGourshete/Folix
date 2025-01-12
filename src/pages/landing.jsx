@@ -51,242 +51,164 @@ const handleAnimationComplete = () => {
 
 const Landing = () => {
   return (
-    <main className="bg-slate-950">
-      <ScrollProgress className="top-[65px]" />
-      <Nav className="sticky"/>
+    <main className="bg-slate-950 container mx-auto text-center">
+  <ScrollProgress className="top-[65px]" />
+  <Nav className="sticky" />
 
-      <div className="w-full">
-        <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
-          {/* */}
-          <BlurText
-            text="Welcome to FOLIX...."
-            delay={150}
-            animateBy="words"
-            direction="top"
-            onAnimationComplete={handleAnimationComplete}
-            className="text-7xl mb-20 text-white font-semibold text-center"
-          />
+  <div className="w-full">
+    <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
+      <BlurText
+        text="Welcome to FOLIX...."
+        delay={150}
+        animateBy="words"
+        direction="top"
+        onAnimationComplete={handleAnimationComplete}
+        className="text-5xl sm:text-7xl mb-20 text-white font-semibold text-center"
+      />
+      <RetroGrid />
+    </div>
 
-          <RetroGrid />
-        </div>
-
-        <div className="grid grid-cols-2 p-10 mr-auto ml-auto px-10 py-10 min-h-screen justify-center">
-          <div className="z-10 flex items-center ml-10 justify-center bg-slate-950 dark:bg-black">
-            <TextReveal text="Hi, I'm Atharva Ganesh Gourshete, an enthusiastic aspiring professional passionate about coding, gaming, and gymming, etc.." />
-          </div>
-          <div className="flex justify-center items-end ">
-            <BounceCards
-              className="custom-class px-40 ml-56"
-              images={images}
-              containerWidth={1000}
-              containerHeight={500}
-              animationDelay={1}
-              animationStagger={0.8}
-              easeType="elastic.out(1, 5)"
-              transformStyles={transformStyles}
-            />
-          </div>
-        </div>
-
-        <div>
-          <SplitText
-            text="Social Handles"
-            className="text-6xl mb-20 text-white font-semibold flex justify-center"
-            delay={150}
-            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-            easing="easeOutCubic"
-            threshold={0.2}
-            rootMargin="-50px"
-            onLetterAnimationComplete={handleAnimationComplete}
-          />
-
-          <div className="flex justify-center gap-10 mb-20">
-            <Link to="https://www.linkedin.com/in/atharva-gourshete-b2a66927b/">
-              <div className="relative justify-center">
-                <InteractiveHoverButton text="Linked in" />
-              </div>
-            </Link>
-            <Link to="https://www.instagram.com/atharva_gourshete/">
-              <div className="relative justify-center">
-                <InteractiveHoverButton text="Instagram" />
-              </div>
-            </Link>
-            <Link to="https://x.com/Atharvag_17">
-              <div className="relative justify-center">
-                <InteractiveHoverButton text="Twitter" />
-              </div>
-            </Link>
-            <Link to="https://github.com/AtharvaGGourshete">
-              <div className="relative justify-center">
-                <InteractiveHoverButton text="GitHub" />
-              </div>
-            </Link>
-          </div>
-
-          <SplitText
-            text="Education"
-            className="text-6xl mb-20 text-white font-semibold flex justify-center mt-96"
-            delay={150}
-            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-            easing="easeOutCubic"
-            threshold={0.2}
-            rootMargin="-50px"
-            onLetterAnimationComplete={handleAnimationComplete}
-          />
-          <div className="grid grid-cols-3 gap-5 justify-between p-10 h-96 rounded-lg text-white">
-            <div className="bg-slate-900 border-0 border-white">
-              <SplitText
-                text="Schooling"
-                className="text-white font-extrabold text-3xl flex justify-center p-4"
-                delay={150}
-                animationFrom={{
-                  opacity: 0,
-                  transform: "translate3d(0,50px,0)",
-                }}
-                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-                easing="easeOutCubic"
-                threshold={0.2}
-                rootMargin="-50px"
-                onLetterAnimationComplete={handleAnimationComplete}
-              />
-              <SparklesText text="Lok Puram Public School" />
-              <TypingAnimation>Grade: 91.4%</TypingAnimation>
-              <TypingAnimation>Board: CBSE</TypingAnimation>
-              <TypingAnimation>Year: 2009 - 2021</TypingAnimation>
-            </div>
-            <div className="bg-slate-900 border-0 border-white">
-              <SplitText
-                text="High School"
-                className="text-white text-3xl flex justify-center p-4"
-                delay={150}
-                animationFrom={{
-                  opacity: 0,
-                  transform: "translate3d(0,50px,0)",
-                }}
-                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-                easing="easeOutCubic"
-                threshold={0.2}
-                rootMargin="-50px"
-                onLetterAnimationComplete={handleAnimationComplete}
-              />
-              <SparklesText text="Pace Institute Of Science" />
-              <TypingAnimation>Grade: 73.33%</TypingAnimation>
-              <TypingAnimation>Board: SSC</TypingAnimation>
-              <TypingAnimation>Field: Science</TypingAnimation>
-              <TypingAnimation>Year: 2021 - 2023</TypingAnimation>
-            </div>
-            <div className="bg-slate-900 border-0 border-white">
-              <SplitText
-                text="B.tech"
-                className="text-white text-3xl flex justify-center p-4"
-                delay={150}
-                animationFrom={{
-                  opacity: 0,
-                  transform: "translate3d(0,50px,0)",
-                }}
-                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-                easing="easeOutCubic"
-                threshold={0.2}
-                rootMargin="-50px"
-                onLetterAnimationComplete={handleAnimationComplete}
-              />
-              <SparklesText text="A.P. Shah Intitute Of Technology" />
-              <TypingAnimation>Degree: B.E </TypingAnimation>
-              <TypingAnimation>Branch: Computer Engineering </TypingAnimation>
-              <TypingAnimation>Year: 2023 - 2027</TypingAnimation>
-            </div>
-          </div>
-          <div>
-          
-          <SplitText
-            text="Skills"
-            className="text-6xl mb-10 text-white font-semibold flex justify-center mt-80"
-            delay={150}
-            animationFrom={{
-              opacity: 0,
-              transform: "translate3d(0,50px,0)",
-            }}
-            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-            easing="easeOutCubic"
-            threshold={0.2}
-            rootMargin="-50px"
-            onLetterAnimationComplete={handleAnimationComplete}
-          />
-          <TiltedScroll />
-          </div>
-          <div className="flex justify-center">
-            <Drawer className="flex justify-center bg-slate-950 rounded-full">
-              <DrawerTrigger className="bg-slate-950 flex justify-center text-black rounded-full">
-                <div className="relative mb-40">
-                  <InteractiveHoverButton text="More ->" />
-                </div>
-              </DrawerTrigger>
-              <DrawerContent className="bg-slate-950 text-white border-0 min-h-screen">
-                <DrawerHeader>
-                  <DrawerTitle>
-                    <div className="grid grid-cols-2 w-1/2 grid-rows-3 gap-5 justify-between p-5 min-h-96 rounded-lg text-white">
-                    <div className="bg-slate-900 border-0 border-white">
-                    <img 
-                    src={Images.image1}
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    <div className="bg-slate-900 border-0 border-white">
-                    <img 
-                    src={Images.image2} 
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    <div className="bg-slate-900 border-0 border-white">
-                    <img 
-                    src={Images.image3} 
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    <div className="bg-slate-900 border-0 border-white">
-                      <img 
-                    src={Images.image4} 
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    <div className="bg-slate-900 border-0 border-white">
-                      <img 
-                    src={Images.image5} 
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    <div className="bg-slate-900 border-0 border-white">
-                      <img 
-                    src={Images.image6} 
-                    alt='first image'
-                    className="h-40 mr-auto ml-auto"
-                    />
-                    </div>
-                    </div>
-                    </DrawerTitle>
-                  
-                </DrawerHeader>
-                <DrawerFooter>
-                  
-                  <DrawerClose>
-                    <Button variant="outline" className="text-black">Cancel</Button>
-                  </DrawerClose>
-                </DrawerFooter>
-              </DrawerContent>
-            </Drawer>
-          </div>
-        </div>
+    {/* About Section */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 lg:p-4">
+      <div className="z-10 flex items-center justify-center bg-slate-950 dark:bg-black  rounded-lg">
+        <TextReveal text="Hi, I'm Atharva Ganesh Gourshete, an enthusiastic aspiring professional passionate about coding, gaming, and gymming, etc.." />
       </div>
+      <div className="flex justify-center items-end mx-48">
+        <BounceCards
+          className="custom-class"
+          images={images}
+          containerWidth="100%"
+          containerHeight={500}
+          animationDelay={1}
+          animationStagger={0.8}
+          easeType="elastic.out(1, 5)"
+          transformStyles={transformStyles}
+        />
+      </div>
+    </div>
 
-      <Footer />
-    </main>
+    {/* Social Handles Section */}
+    <SplitText
+      text="Social Handles"
+      className="text-4xl sm:text-6xl mb-10 p-8 text-white font-semibold text-center"
+      delay={150}
+      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+      easing="easeOutCubic"
+      threshold={0.2}
+      rootMargin="-50px"
+      onLetterAnimationComplete={handleAnimationComplete}
+    />
+    <div className="flex flex-wrap justify-center gap-5 mb-20 p-20">
+      {[
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/atharva-gourshete-b2a66927b/" },
+        { text: "Instagram", url: "https://www.instagram.com/atharva_gourshete/" },
+        { text: "Twitter", url: "https://x.com/Atharvag_17" },
+        { text: "GitHub", url: "https://github.com/AtharvaGGourshete" },
+      ].map(({ text, url }, index) => (
+        <Link to={url} key={index} className="relative">
+          <InteractiveHoverButton text={text} />
+        </Link>
+      ))}
+    </div>
+
+    {/* Education Section */}
+    <SplitText
+      text="Education"
+      className="text-4xl sm:text-6xl mb-10 text-white font-semibold text-center"
+      delay={150}
+      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+      easing="easeOutCubic"
+      threshold={0.2}
+      rootMargin="-50px"
+      onLetterAnimationComplete={handleAnimationComplete}
+    />
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+      {[
+        {
+          title: "Schooling",
+          institute: "Lok Puram Public School",
+          details: ["Grade: 91.4%", "Board: CBSE", "Year: 2009 - 2021"],
+        },
+        {
+          title: "High School",
+          institute: "Pace Institute Of Science",
+          details: ["Grade: 73.33%", "Board: SSC", "Field: Science", "Year: 2021 - 2023"],
+        },
+        {
+          title: "B.Tech",
+          institute: "A.P. Shah Institute Of Technology",
+          details: ["Degree: B.E", "Branch: Computer Engineering", "Year: 2023 - 2027"],
+        },
+      ].map(({ title, institute, details }, index) => (
+        <div key={index} className="bg-slate-900 p-5 rounded-lg text-white">
+          <SplitText text={title} className="text-xl font-bold mb-4" />
+          <SparklesText text={institute} />
+          {details.map((detail, i) => (
+            <TypingAnimation key={i}>{detail}</TypingAnimation>
+          ))}
+        </div>
+      ))}
+    </div>
+
+    {/* Skills Section */}
+    <div className="p-16">
+    <SplitText
+      text="Skills"
+      className="text-4xl sm:text-7xl mb-10 text-white font-semibold text-center mt-20"
+      delay={150}
+      animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+      animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+      easing="easeOutCubic"
+      threshold={0.2}
+      rootMargin="-50px"
+      onLetterAnimationComplete={handleAnimationComplete}
+    />
+    </div>
+    <TiltedScroll />
+
+    {/* Drawer Section */}
+    <div className="flex justify-center mt-20">
+      <Drawer className="flex justify-center bg-slate-950 rounded-full">
+        <DrawerTrigger className="bg-slate-950 flex justify-center text-black rounded-full">
+          <InteractiveHoverButton text="More ->" />
+        </DrawerTrigger>
+        <DrawerContent className="bg-slate-950 text-white border-0 min-h-screen">
+          <DrawerHeader>
+            <DrawerTitle>
+              <div className="grid grid-cols-2 gap-5 p-5">
+                {Array(6)
+                  .fill(null)
+                  .map((_, index) => (
+                    <div
+                      key={index}
+                      className="bg-slate-900 p-5 rounded-lg flex justify-center"
+                    >
+                      <img
+                        src={Images[`image${index + 1}`]}
+                        alt={`Image ${index + 1}`}
+                        className="h-40"
+                      />
+                    </div>
+                  ))}
+              </div>
+            </DrawerTitle>
+          </DrawerHeader>
+          <DrawerFooter>
+            <DrawerClose>
+              <Button variant="outline" className="text-black">
+                Cancel
+              </Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </div>
+  </div>
+  <Footer />
+</main>
+
   );
 };
 

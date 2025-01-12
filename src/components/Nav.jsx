@@ -32,36 +32,35 @@ function Nav() {
 
   return (
     <>
-      <nav className="bg-slate-950 sticky top-0 z-50 shadow-md">
-        <div className="h-10vh flex justify-between text-white lg:py-5 px-20 py-4">
-          <div className="flex items-center flex-1 justify-around">
-            <span className="text-3xl font-bold">Folix</span>
-          </div>
-          <div className="lg:flex md:flex lg:flex-1 items-center justify-evenly font-normal hidden">
-            <div className="flex-10">
-              <ul className="flex gap-8 mr-16 text-[18px]">
-                <SignedOut>
-                  <Button
-                    variant="destructive"
-                    onClick={() => setShowSignIn(true)}
-                  >
-                    Login
-                  </Button>
-                </SignedOut>
-                <SignedIn>
-                  <UserButton
-                    appearance={{
-                      elements: {
-                        avatarBox: "w-10 h-10",
-                      },
-                    }}
-                  ></UserButton>
-                </SignedIn>
-              </ul>
-            </div>
+      <nav className="bg-slate-950 sticky top-0 shadow-md z-50">
+        <div className="flex items-center justify-between px-6 py-4 text-white">
+          {/* Brand Name */}
+          <div className="text-2xl font-bold">Folix</div>
+
+          {/* Navigation Links */}
+          <div className="flex space-x-8 items-center">
+            <SignedOut>
+              <Button
+                variant="destructive"
+                onClick={() => setShowSignIn(true)}
+              >
+                Login
+              </Button>
+            </SignedOut>
+            <SignedIn>
+              <UserButton
+                appearance={{
+                  elements: {
+                    avatarBox: "w-10 h-10",
+                  },
+                }}
+              />
+            </SignedIn>
           </div>
         </div>
       </nav>
+
+      {/* Sign-In Modal */}
       {showSignIn && (
         <div
           className="fixed flex inset-0 items-center bg-black bg-opacity-50 justify-center z-50"
