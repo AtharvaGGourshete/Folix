@@ -52,8 +52,8 @@ const handleAnimationComplete = () => {
 const Landing = () => {
   return (
     <main className="bg-slate-950">
-      {/* <ScrollProgress className="top-[65px]" /> */}
-      <Nav />
+      <ScrollProgress className="top-[65px]" />
+      <Nav className="sticky"/>
 
       <div className="w-full">
         <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-background bg-slate-950">
