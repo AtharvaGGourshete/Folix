@@ -9,15 +9,18 @@ export default {
   ],
   theme: {
   	extend: {
-		fontFamily: {
-			playwrite: ['"Playwrite AU SA"', 'serif'], // Custom font with a fallback
-		  },
-		  fontWeight: {
-			custom: '400', // Replace <weight> with the desired numeric value (e.g., 400, 700)
-		  },
-		  fontStyle: {
-			italic: 'italic', // Tailwind doesn't natively handle fontStyle but normal is default
-		  },
+  		fontFamily: {
+  			playwrite: [
+  				'Playwrite AU SA"',
+  				'serif'
+  			]
+  		},
+  		fontWeight: {
+  			custom: '400'
+  		},
+  		fontStyle: {
+  			italic: 'italic'
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

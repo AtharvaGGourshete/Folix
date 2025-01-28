@@ -10,7 +10,7 @@ import {
 } from "@clerk/clerk-react";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { dark, neobrutalism } from '@clerk/themes';
+import { dark, neobrutalism } from "@clerk/themes";
 
 function Nav() {
   const [search, setSearch] = useSearchParams();
@@ -36,16 +36,13 @@ function Nav() {
         <div className="flex items-center justify-between px-6 py-4 text-white">
           {/* Brand Name */}
           <a href="/">
-          <div className="text-2xl font-bold">Atharva.dev</div>
+            <div className="text-2xl font-bold">Atharva.dev</div>
           </a>
 
           {/* Navigation Links */}
           <div className="flex space-x-8 items-center">
             <SignedOut>
-              <Button
-                variant="destructive"
-                onClick={() => setShowSignIn(true)}
-              >
+              <Button variant="destructive" onClick={() => setShowSignIn(true)}>
                 Login
               </Button>
             </SignedOut>
